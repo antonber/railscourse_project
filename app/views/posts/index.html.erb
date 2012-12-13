@@ -1,0 +1,15 @@
+<h1>This is all the posts</h1>
+
+<table>
+	<tr>
+		<td>URL</td>
+		<td>Title</td>
+	</tr>
+
+<% @posts.each do |post| %>
+	<tr>
+		<td><%= post.url %></td>
+		<td><%= post.title %></td>
+	</tr>
+<% end %>
+</table>

@@ -1,5 +1,5 @@
 <h1><%= link_to @post.title, @post.url %></h1>
-Comments: <%= @post.comments.count %> !
+<%= pluralize(@post.comments.count, "comment") %> !
 
 <ul>
 	<% @post.comments.each do |comment| %>

@@ -1,0 +1,10 @@
+<h1><%= link_to @post.title, @post.url %></h1>
+Comments: <%= @post.comments.count %> !
+
+<ul>
+	<% @post.comments.each do |comment| %>
+		<li><%= comment.content %></li>
+	<% end %>
+</ul>
+
+<%= link_to 'Back to all', posts_path %>

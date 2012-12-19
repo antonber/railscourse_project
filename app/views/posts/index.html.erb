@@ -10,7 +10,7 @@
 <% @posts.each do |post| %>
 	<tr>
 		<td><%= post.url %></td>
-		<td><%= link_to post.title, post.url %></td>
+		<td><%= link_to post.title, post %></td>
 		<td><%= post.comments.count %></td>
 	</tr>
 <% end %>

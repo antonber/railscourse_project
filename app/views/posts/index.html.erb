@@ -4,12 +4,14 @@
 	<tr>
 		<td>URL</td>
 		<td>Title</td>
+		<td>Comments</td>
 	</tr>
 
 <% @posts.each do |post| %>
 	<tr>
 		<td><%= post.url %></td>
-		<td><%= post.title %></td>
+		<td><%= link_to post.title, post.url %></td>
+		<td><%= post.comments.count %></td>
 	</tr>
 <% end %>
 </table>
